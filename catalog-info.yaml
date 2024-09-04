@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: rqm5gtztm-python-gitops
+  description: This is GitOps manifest for rqm5gtztm-python   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: rqm5gtztm-python
+    janus-idp.io/tekton: rqm5gtztm-python
+    backstage.io/kubernetes-id: rqm5gtztm-python 
+    backstage.io/techdocs-ref: dir:. 
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:rqm5gtztm-python

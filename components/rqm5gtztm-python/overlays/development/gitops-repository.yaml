@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: rqm5gtztm-python-gitops-repository
+spec:
+  url: https://github.com/rhtap-qe-jsmid/rqm5gtztm-python-gitops
